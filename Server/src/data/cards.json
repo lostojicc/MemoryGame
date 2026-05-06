@@ -1,0 +1,52 @@
+[
+  {
+    "id": "parthenon",
+    "name": "Parthenon",
+    "imageUrl": "https://res.cloudinary.com/dl8qsm478/image/upload/v1778029203/8-bit_16-bit_Digital_Anime_Sci-fi_and_Horror_AI_gsdocy.jpg"
+  },
+  {
+    "id": "taj-mahal",
+    "name": "Taj Mahal",
+    "imageUrl": "https://res.cloudinary.com/dl8qsm478/image/upload/v1778029202/8-bit_16-bit_Digital_Anime_Sci-fi_and_Horror_AI_8_zm0mld.jpg"
+  },
+  {
+    "id": "christ-the-redeemer",
+    "name": "Christ the Redeemer",
+    "imageUrl": "https://res.cloudinary.com/dl8qsm478/image/upload/v1778029201/8-bit_16-bit_Digital_Anime_Sci-fi_and_Horror_AI_7_saxh2a.jpg"
+  },
+  {
+    "id": "great-wall-of-china",
+    "name": "Great Wall of China",
+    "imageUrl": "https://res.cloudinary.com/dl8qsm478/image/upload/v1778029201/8-bit_16-bit_Digital_Anime_Sci-fi_and_Horror_AI_6_g2lfkp.jpg"
+  },
+  {
+    "id": "el-castillo",
+    "name": "El Castillo",
+    "imageUrl": "https://res.cloudinary.com/dl8qsm478/image/upload/v1778029200/8-bit_16-bit_Digital_Anime_Sci-fi_and_Horror_AI_5_hlad4p.jpg"
+  },
+  {
+    "id": "great-pyramid-of-giza",
+    "name": "Great Pyramid of Giza",
+    "imageUrl": "https://res.cloudinary.com/dl8qsm478/image/upload/v1778029199/8-bit_16-bit_Digital_Anime_Sci-fi_and_Horror_AI_4_fvojlb.jpg"
+  },
+  {
+    "id": "petra",
+    "name": "Petra",
+    "imageUrl": "https://res.cloudinary.com/dl8qsm478/image/upload/v1778029199/8-bit_16-bit_Digital_Anime_Sci-fi_and_Horror_AI_3_hfjtck.jpg"
+  },
+  {
+    "id": "statue-of-liberty",
+    "name": "Statue of Liberty",
+    "imageUrl": "https://res.cloudinary.com/dl8qsm478/image/upload/v1778029198/8-bit_16-bit_Digital_Anime_Sci-fi_and_Horror_AI_1_t2pcel.jpg"
+  },
+  {
+    "id": "stonehenge",
+    "name": "Stonehenge",
+    "imageUrl": "https://res.cloudinary.com/dl8qsm478/image/upload/v1778029199/8-bit_16-bit_Digital_Anime_Sci-fi_and_Horror_AI_2_mahsw9.jpg"
+  },
+  {
+    "id": "colosseum",
+    "name": "Colosseum",
+    "imageUrl": "https://res.cloudinary.com/dl8qsm478/image/upload/v1778029202/8-bit_16-bit_Digital_Anime_Sci-fi_and_Horror_AI_9_uez2xy.jpg"
+  }
+]
