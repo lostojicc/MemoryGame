@@ -1,10 +1,12 @@
 using System.Collections.Generic;
+using UnityEngine;
 
 namespace MemoryGame.Client.Domain.Game
 {
     public sealed class GameState
     {
         private readonly List<CardState> _cards;
+        private CardState _firstSelectedCard;
 
         public string GameId { get; }
         public int Pairs { get; }
@@ -25,10 +27,24 @@ namespace MemoryGame.Client.Domain.Game
             _cards = cards;
         }
 
-        public bool ResolveAttempt(CardState firstCard, CardState secondCard)
+        public CardSelectionResult SelectCard(CardState card)
         {
-            Attempts++;
+            if (card == null || card.IsMatched || card.IsRevealed)
+                return CardSelectionResult.Ignored();
 
+            card.Reveal();
+
+            if (_firstSelectedCard == null)
+            {
+                _firstSelectedCard = card;
+                return CardSelectionResult.FirstCardSelected(card);
+            }
+
+            CardState firstCard = _firstSelectedCard;
+            CardState secondCard = card;
+            _firstSelectedCard = null;
+
+            Attempts++;
             bool isMatch = firstCard.MatchId == secondCard.MatchId;
 
             if (isMatch)
@@ -37,11 +53,21 @@ namespace MemoryGame.Client.Domain.Game
                 secondCard.MarkAsMatched();
                 Score++;
                 Combo++;
-                return true;
+
+                if (IsComplete)
+                    return CardSelectionResult.GameCompleted(firstCard, secondCard);
+
+                return CardSelectionResult.MatchFound(firstCard, secondCard);
             }
 
             Combo = 0;
-            return false;
+            return CardSelectionResult.MismatchFound(firstCard, secondCard);
+        }
+
+        public void HideUnmatchedCards(CardState firstCard, CardState secondCard)
+        {
+            firstCard?.Hide();
+            secondCard?.Hide();
         }
     }
 }
