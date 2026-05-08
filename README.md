@@ -1,11 +1,21 @@
 # Game of Memory
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin: 16px 0;">
-  <img src="docs/screenshots/screenshot-1.jpg" alt="Screenshot 1" style="width: 100%; border-radius: 8px;" />
-  <img src="docs/screenshots/screenshot-2.jpg" alt="Screenshot 2" style="width: 100%; border-radius: 8px;" />
-  <img src="docs/screenshots/screenshot-3.jpg" alt="Screenshot 3" style="width: 100%; border-radius: 8px;" />
-  <img src="docs/screenshots/screenshot-4.jpg" alt="Screenshot 4" style="width: 100%; border-radius: 8px;" />
-</div>
+<table>
+  <tr>
+    <td width="25%">
+      <img src="docs/screenshots/screenshot-1.jpg" alt="Screenshot 1" width="100%" />
+    </td>
+    <td width="25%">
+      <img src="docs/screenshots/screenshot-2.jpg" alt="Screenshot 2" width="100%" />
+    </td>
+    <td width="25%">
+      <img src="docs/screenshots/screenshot-3.jpg" alt="Screenshot 3" width="100%" />
+    </td>
+    <td width="25%">
+      <img src="docs/screenshots/screenshot-4.jpg" alt="Screenshot 4" width="100%" />
+    </td>
+  </tr>
+</table>
 
 Game of Memory is a mobile-friendly Unity implementation of the classic memory card game. The player reveals two cards per turn, tries to find matching pairs, and wins when all pairs are found.
 
